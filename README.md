@@ -8,19 +8,19 @@ There will be multiple pages where people can:
 
 ## Project Break Down & Plan:
 April 6 - Getting started 30%
-      - [ ] All photos are there
-      - [ ] three pages are present
-      - [ ] all basic bottons and forms are there
-      - [ ] All HTML requirements are met
+- [ ] All photos are there
+- [ ] three pages are present
+- [ ] all basic bottons and forms are there
+- [ ] All HTML requirements are met
 April 13 - 80% must be done - Technical Requirements Met
-      - [ ] All CSS requirements are met
-      - [ ] forms and bottons have event listeners
-      - [ ] drag and drop for book order option
-      - [ ] filter by book name
-      - [ ] creating and deleting option
-      - [ ] All JavaScript requirements are met
+- [ ] All CSS requirements are met
+- [ ] forms and bottons have event listeners
+- [ ] drag and drop for book order option
+- [ ] filter by book name
+- [ ] creating and deleting option
+- [ ] All JavaScript requirements are met
 April 20 - Project is 100% done - Functional Requirements Met
-      - [ ] Hard Things requirements are met
+- [ ] Hard Things requirements are met
 April 27
-      - [ ] Submit and Present
+- [ ] Submit and Present
 
