@@ -1,0 +1,36 @@
+.photo{
+    width: 20%;
+    border-radius: 6em;
+}
+
+figure{
+    display: inline-block;
+}
+
+p{
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+body{
+    background-color: #FFF2E1;
+}
+
+nav{
+    background-color: #D1BB9E;
+    height: 5em;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+footer{
+    background-color: #D1BB9E;
+    height: 3em;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.order{
+    display: inline-block;
+}
