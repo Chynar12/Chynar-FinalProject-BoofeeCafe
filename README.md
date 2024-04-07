@@ -8,8 +8,8 @@ There will be multiple pages where people can:
 
 ## Project Break Down & Plan:
 April 6 - Getting started 30%
-- [ ] All photos are there
-- [ ] three pages are present
+- [x] All photos are there
+- [x] three pages are present
 - [ ] all basic bottons and forms are there
 - [ ] All HTML requirements are met
 
