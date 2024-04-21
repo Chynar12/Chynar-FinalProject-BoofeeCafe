@@ -1,12 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
 .photo{
-    width: 20%;
-    border-radius: 6em;
+    width: 50%;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px 0 rgba(52, 35, 17, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-figure{
-    display: inline-block;
-}
+.photo:hover {
+    box-shadow: 1px 0 2px 1px rgba(90, 52, 5, 0.5);
+  }
 
+h1 {
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
 p{
     font-family: "Crimson Text", serif;
     font-weight: 700;
@@ -17,20 +32,107 @@ body{
     background-color: #FFF2E1;
 }
 
-nav{
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
     background-color: #D1BB9E;
+    /* background-color: #D1BB9E;
     height: 5em;
     padding: 2em;
-    border-radius: 1em;
+    border-radius: 0.5em;
+    margin-top: 0; */
+}
+
+.navmenu{
+    display: flex;
+}
+
+.navmenu a{
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
 }
 
 footer{
     background-color: #D1BB9E;
     height: 3em;
-    padding: 2em;
-    border-radius: 1em;
+    padding: 1em;
 }
 
 .order{
     display: inline-block;
 }
+
+#libraryPhoto{
+    width: 50%;
+    border-radius: 8px;
+}
+
+a {
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#b16c05; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+
+.polaroid {
+    background-color: rgb(210, 203, 165);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+.container {
+    max-width: 1200px;
+    padding: 0 0 2rem 0;
+    text-align: center;
+  }
+
+  .container:hover{
+    transform: scale(0.9);
+}
+
+  
+  .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+      gap: 2rem;
+    }
+    
+    .row {
+     position: relative;
+     transition: all .40s;
+    }
+
+    .row img{
+        width: 100%;
+        height: auto;
+        transition: all .40s;
+    }
+
+    
+    
+
+
+
+
+/* mobile responsive*/
+
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }

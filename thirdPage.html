@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Third Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <p>Third Page</p>
+<body class="thirdBackground">
+    <header>
+        <ul class="navmenu">
+          <li><a href="index.html" target="_blank">Home</a></li>
+          <li><a href="secondPage.html" target="_blank">Order</a></li>
+          <br />
+          <li><a href="booksPage.html" target="_blank">Books</a></li>
+        </ul>
+      
+      </header>
+      <br><br><br><br>
+    <p>Library reservation</p>
+    <figure>
+        
+        <img id="libraryPhoto" src="images/pexels-tim-douglas-6205624.jpg">
+
+    </figure>  
+
+    <form>
+    <p>
+        <label for="name">First name:</label><br />
+        <input type="text" id="name" name="name" /><br />
+        
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" /><br />
+        <br />
+    </p>
+
+    <p>
+        Number of seats: &nbsp;&nbsp;
+        <select id="amount" name="amount">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </p>
+
+    <input type="submit"/>
+    </form>
+
+
+
+
+    <footer>Footer here</footer>
 </body>
 </html>
