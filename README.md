@@ -10,11 +10,11 @@ There will be multiple pages where people can:
 April 6 - Getting started 30%
 - [x] All photos are there
 - [x] three pages are present
-- [ ] all basic bottons and forms are there
+- [x] all basic bottons and forms are there
 - [ ] All HTML requirements are met
 
 April 13 - 80% must be done - Technical Requirements Met
-- [ ] All CSS requirements are met
+- [x] All CSS requirements are met(except for few)
 - [ ] forms and bottons have event listeners
 - [ ] drag and drop for book order option
 - [ ] filter by book name
