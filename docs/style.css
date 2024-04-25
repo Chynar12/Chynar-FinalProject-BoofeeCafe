@@ -1,0 +1,121 @@
+.text {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 60px;
+}
+
+body{
+    background-color: #FFF2E1;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25em;
+    background-color: #D1BB9E;
+}
+
+.navmenu {
+    display: flex;
+    font-size: 60px;
+    margin-right: 1em;
+}
+
+.navmenu a {
+    padding: 10px 40px;
+    transition: all .42s ease;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b16c05;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.logo {
+    width: 20%;
+    margin-left: 3em;
+}
+
+
+.container {
+    max-width: 1200px;
+    padding: 0 0 2rem 0;
+    text-align: center;
+}
+figure{
+    margin-top: 60em;
+    
+}
+figcaption{
+    background-color: #D1BB9E;
+    border-radius: 3em;
+    font-size: 60px;
+}
+
+.container:hover {
+    transform: scale(0.9);
+}
+
+
+.products {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+
+.row {
+    position: relative;
+    transition: all .40s;
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+    border-radius: 3em;
+}
+
+footer{
+    background-color: #D1BB9E;
+    height: 3em;
+    padding: 2em;
+    display: flex;
+}
+
+
+.order{
+    display: inline-block;
+}
+
+
+.all-content {}
+
+
+
+
+
+/*mobile :
+ logo width 50%
+
+
+ */
