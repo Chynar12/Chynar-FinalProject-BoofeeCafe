@@ -7,6 +7,7 @@
     <title>SecondPage</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="">
+    <script src="https://kit.fontawesome.com/a522539140.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,12 +15,29 @@
     <header>
         <img class="logo" src="images/logo.png" alt="logo" />
         <ul class="navmenu text">
-            <li><a href="CoffeePage.html" target="_blank">Order</a></li>
+            <li><a href="index.html" target="_blank">Home</a></li>
             <li><a href="thirdPage.html" target="_blank">Library</a></li>
             <li><a href="booksPage.html" target="_blank">Books</a></li>
         </ul>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
     </header>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <br><br><br><br><br><br>
+
+
+    <div class="box">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00</h2>
+            </div>
+        </div>
+    </div>
+   
+    <br><br><br><br><br><br>
     <from class="text">
         <label for="name">First name:</label><br />
         <input type="text" id="name" name="name" /><br />
@@ -167,7 +185,7 @@
             <li><a href="booksPage.html" target="_blank">About Us</a></li>
         </ul>
     </footer>
-
+    <script src="addToCart.js"></script>
 </body>
 
 </html>
