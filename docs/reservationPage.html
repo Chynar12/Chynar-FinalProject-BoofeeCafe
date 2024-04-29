@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reservation Page</title>
+</head>
+
+<body class="main_bg">
+
+    <header>
+        <img class="logo" src="images/logo.png" alt="logo" />
+        <ul class="navmenu text">
+            <li><a href="coffeePage.html" target="_blank">Order</a></li>
+            <li><a href="reservationPage.html" target="_blank">Library</a></li>
+            <li><a href="booksPage.html" target="_blank">Books</a></li>
+        </ul>
+    </header>
+
+
+    <div class="form">
+        <div class="form-text">
+            <h1><span>Book Now</span> <span></span></h1>
+        </div>
+        <div class="main-form">
+            <form action="reservationPage.html" method="get">
+                <div>
+                    <span>Your full name:</span>
+                    <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+                </div>
+                <div>
+                    <span>Your email address:</span>
+                    <input type="email" name="name" id="name" placeholder="Write your email here..." required> 
+                </div>
+                <div>
+                    <!-- <---this is the select option--->
+                    <span>How many people:</span>
+                    <select name="people" id="people" required>
+                        <option value=""><---People---></option>
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                    </select>
+                    <!-- <---this is the select option--->
+                </div>
+                <div>
+                    <span>What time:</span>
+                    <input type="time" name="time" id="time" placeholder="Time" required>
+                </div>
+                <div>
+                    <span>What date:</span>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+                <div>
+                    <span>Your phone number:</span>
+                    <input type="number" name="number" id="number" placeholder="Write your number here..." required>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="SUBMIT" id="submit">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="submitReservation.js"></script>
+</body>
+
+</html>

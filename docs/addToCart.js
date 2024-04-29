@@ -46,10 +46,17 @@ document.getElementById('root').innerHTML = categories.map((item) => {
 
 var cart =[];
 
-function addToCart(a){
-    cart.push({...categories[a]});
+function addToCart(a) {
+    let product = categories[a];
+    let found = cart.find(item => item.id === product.id);
+    if (found) {
+        found.quantity += 1;
+    } else {
+        cart.push({...product, quantity: 1});
+    }
     displayCart();
 }
+
 
 function delElement(a){
     cart.splice(a, 1);
@@ -58,27 +65,48 @@ function delElement(a){
 
 
 
-function displayCart(a){
-    let j=0, total=0;
-    document.getElementById("count").innerHTML=cart.length;
-    if(cart.length==0){
+function displayCart() {
+    let total = 0;
+    document.getElementById("count").innerHTML = cart.reduce((acc, item) => acc + item.quantity, 0);
+    if (cart.length === 0) {
         document.getElementById('cartItem').innerHTML = "Your cart is empty";
-        document.getElementById("total").innerHTML = "$ " +0+".00";
-    }
-    else{
-        document.getElementById("cartItem").innerHTML = cart.map((items)=>{
-            var {image, title, price} = items;
-            total=total+price;
-            document.getElementById("total").innerHTML = "$ "+total+".00";
-            return(
+        document.getElementById("total").innerHTML = "$ 0.00";
+    } else {
+        document.getElementById('cartItem').innerHTML = cart.map((item, index) => {
+            total += item.price * item.quantity;
+            return (
                 `<div class='cart-item'>
-                <div class='row-img'>
-                    <img class='rowing' src=${image}>
-                </div>
-                <p style='font-size:12px;'>${title}</p>
-                <h2 style='font-size: 15px;'>$ ${price}.00</h2>`+
-                "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
+                    <div class='row-img'>
+                        <img class='rowing' src=${item.image}></img>
+                    </div>
+                    <p style='font-size:12px;'>${item.title}</p>
+                    <input class="cart-quantity" type="number" value="${item.quantity}" onchange="updateQuantity(${index}, this.value)">
+                    <h2 style='font-size: 15px;'>$ ${item.price}.00</h2>
+                    <i class='fa-solid fa-trash' onclick='delElement(${index})'></i>
+                </div>`
             );
         }).join('');
+        document.getElementById("total").innerHTML = "$ " + total.toFixed(2);
+    }
+}
+
+
+function updateQuantity(index, newQuantity) {
+    newQuantity = parseInt(newQuantity);
+    if (newQuantity > 0) {
+        cart[index].quantity = newQuantity;
+    } else {
+        cart[index].quantity = 1;
+    }
+    displayCart();
+}
+
+function submitOrder() {
+    if (cart.length > 0) {
+        alert("Order submitted!");
+        cart = []; // Clear the cart
+        displayCart();
+    } else {
+        alert("Your cart is empty!");
     }
 }

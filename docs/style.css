@@ -12,7 +12,6 @@ body{
     flex-direction: column;
 }
 
-
 header {
     position: fixed;
     width: 100%;
@@ -63,13 +62,13 @@ a:hover {
     max-width: 1200px;
     text-align: center;
 }
-.figure{
-    margin-top: 15em;
+.container:hover {
+    transform: scale(0.9);
 }
 
 
-.container:hover {
-    transform: scale(0.9);
+.figure{
+    margin-top: 15em;
 }
 
 
@@ -78,6 +77,8 @@ a:hover {
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
     gap: 2rem;
 }
+
+
 
 .row {
     position: relative;
@@ -106,7 +107,7 @@ footer{
 
 .cart{
     display: flex;
-    background-color: white;
+    background-color: #A79277;
     justify-content: space-between;
     align-items: center;
     padding: 7px 10px;
@@ -115,7 +116,7 @@ footer{
 }
 
 .fa-solid{
-    color: #D1BB9E;;
+    color: white;
 }
 
 .cart p{
@@ -125,7 +126,7 @@ footer{
     align-items: center;
     justify-content: center;
     border-radius: 22px;
-    background-color: #D1BB9E;;
+    background-color: #D1BB9E;
     color: white;
 }
 
@@ -145,25 +146,28 @@ footer{
 .sidebar{
     width: 40%;
     border-radius: 5px;
-    background-color: #eee;
+    background-color: #F2EFE5;
     margin-left: 20px;
     padding: 15px;
     text-align: center;
 }
 
+
+
 .head{
-    background-color: #D1BB9E;;
+    background-color: #D1BB9E;
     border-radius: 3px;
     height: 40px;
     padding: 10px;
     margin-bottom: 20px;
-    color: white;
+    color: #333;
     display: flex;
     align-items: center;
 }
 
 .foot{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin: 20px 0px;
     padding: 10px 0px;
@@ -175,7 +179,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #D1BB9E;;
+    border: 1px solid #D1BB9E;
     border-radius: 5px;
     padding: 15px;
 }
@@ -210,18 +214,20 @@ h2{
     font-size: 20px;
     color: red;
 }
+
 button{
     width: 100%;
     position: relative;
     border: none;
     border-radius: 5px;
-    background-color: #D1BB9E;;
+    background-color: #DADDB1;
     padding: 7px 25px;
     cursor: pointer;
-    color: white;
+    color: #333;
 }
+
 button:hover{
-    background-color: #333;
+    background-color: #a2a485;
 }
 
 .cart-item{
@@ -232,14 +238,14 @@ button:hover{
     background-color: white;
     border-bottom: 1px solid #aaa;
     border-radius: 3px;
-    margin: 10px 10px;
+    margin: 10px 0px;
 }
 
 .row-img{
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    border: 1px solid #D1BB9E;;
+    border: 1px solid #D1BB9E;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,15 +257,189 @@ button:hover{
     border-radius: 50%;
 }
 
+.cart-quantity{
+    width: 50px;
+    height: 30px;
+    border: 1px solid #aaa;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
 .fa-trash:hover{
     cursor: pointer;
     color: #333;
 }
 
+.order-button{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #D1BB9E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.order-button:hover{
+    background-color: #333;
+}
+
+/*reservation page/////////////////////////////*/
 
 
+.main_bg{
+    background-image: url(images/table-man.jpg);
+    max-width: 1280px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.form{
+    width: 650px;
+}
+
+.form-text{
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.form-text h1{
+    color: #A79277;
+    margin-bottom: 20px;
+}
+
+
+.main-form div{
+    margin: 10px 10px;
+    width: 300px;
+    display: inline-block;
+}
+.main-form div input {
+    width: 100%;
+    background: none;
+    border: 1px solid #B3A492;
+    font-size: 20px;
+    color: #A79277;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div select{
+    width: 104%;
+    background: none;
+    border: 1px solid #B3A492;
+    font-size: 20px;
+    color: #A79277;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div span{
+    width: 100%;
+    color: #c7b7a2;
+}
+
+#submit{
+    width: 100%;
+    text-align: center;
+}
+#submit input{
+    width: 200px;
+    background-color: #D6C7AE !important;
+    color: black !important;
+    transition: all .3s;
+}
+#submit input:hover{
+    width: 200px;
+    background-color: #DADDB1 !important;
+    color: black !important;
+}
+#submit input:active{
+    background-color: rgb(46, 20, 5) !important;
+    color: #fff !important;
+}
+
+
+/*books page /////////////////////////////*/
+
+
+
+.content2{
+    display: flex;
+    height: 100vh;  /* Use viewport height to fill the screen */
+}
+
+.sidebar2{
+    width: 20%;
+    background-color: #F2EFE5;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    order: 2; 
+    margin-left: 450px;
+}
+
+.products2{
+    flex-grow: 2; 
+    padding: 20px;
+    overflow-y: auto;  
+    order: 1;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+    gap: 20px; 
+}
+
+.polaroid{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.polaroid img{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.head2, .foot2 {
+    background-color: #D1BB9E;
+    border-radius: 3px;
+    padding: 10px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cart-items{
+   background-color: white;
+    padding: 10px;
+    border-radius: 3px;
+    min-height: 50px;
+    max-height: 300px; /* Fixed height */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+
+
+
+
+
+@media screen and (max-width:710px) {
+    .main-form{
+        text-align: center;
+    }
+    .container2{
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
+}
 /*mobile :
  logo width 50%
-
-
  */
