@@ -1,8 +1,8 @@
 const product = [
     {
         id: 0,
-        image: 'images/pastry-bulka.jpg',
-        title: 'Bulka',
+        image: 'images/pastry-cookies.jpg',
+        title: 'Cookies',
         price: 4,
     },
     {
@@ -13,8 +13,8 @@ const product = [
     },
     {
         id: 2,
-        image: 'images/pastry-cookies.jpg',
-        title: 'Cookies',
+        image: 'images/pastry-bulka.jpg',
+        title: 'Bulka',
         price: 2,
     },
     {
@@ -22,7 +22,57 @@ const product = [
         image: 'images/pastry-dounut.jpg',
         title: 'Dounut',
         price: 4,
+    },
+    {
+        id: 4,
+        image: 'images/pastry-makaron.jpg',
+        title: 'Makaron',
+        price: 4,
+    },
+    {
+        id: 5,
+        image: 'images/pastry-muffin.jpg',
+        title: 'Muffin',
+        price: 3,
+    },
+    {
+        id: 6,
+        image: 'images/pastry-pancake.jpg',
+        title: 'Pancake',
+        price: 2,
+    },
+
+    {
+        id: 7,
+        image: 'images/americano.jpg',
+        title: 'Americano - medium',
+        price: 4,
+    },
+    {
+        id: 8,
+        image: 'images/latte.png',
+        title: 'Latte - medium',
+        price: 4,
+    },
+    {
+        id: 9,
+        image: 'images/cappuchino.png',
+        title: 'Cappuchino - medium',
+        price: 4,
+    },
+    {
+        id: 10,
+        image: 'images/espresso.png',
+        title: 'Espresso',
+        price: 3,
+    },
+    {
+        id: 11,
+        image: 'images/pastry-smoothie.jpg',
+        title: 'Smoothie',
+        price: 4,
     }
+
 ];
 
 const categories = [...new Set(product.map((item) => { return item }))]

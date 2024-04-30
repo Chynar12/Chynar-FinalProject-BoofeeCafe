@@ -24,12 +24,12 @@ function addProductToCart(product) {
     const cartItems = document.querySelector('.cart-items');
     const clone = product.cloneNode(true);
     const removeButton = clone.querySelector('.remove-item');
-    removeButton.style.display = 'block'; // Show the remove button
+    removeButton.style.display = 'block'; // Show remove button
 
     removeButton.addEventListener('click', () => removeItem(clone, price));
 
     if (cartItems.innerText === 'Your cart is empty') {
-        cartItems.innerText = ''; // Clear 'empty' text
+        cartItems.innerText = ''; 
     }
     cartItems.appendChild(clone);
 
@@ -53,4 +53,20 @@ function submitOrder() {
     // Reset cart and total
     document.querySelector('.cart-items').innerHTML = 'Your cart is empty';
     document.getElementById('total').innerText = '$0.00';
+}
+
+function filterBooks() {
+    const searchInput = document.getElementById('searchBar');
+    const filter = searchInput.value.toUpperCase();
+    const booksContainer = document.querySelector('.container2');
+    const books = booksContainer.querySelectorAll('.polaroid');
+
+    books.forEach(book => {
+        const title = book.querySelector('p').textContent.toUpperCase();
+        if (title.includes(filter)) {
+            book.style.display = '';
+        } else {
+            book.style.display = 'none';
+        }
+    });
 }

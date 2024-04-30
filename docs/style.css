@@ -1,3 +1,13 @@
+:root{
+    --main-background-color: #FFF2E1;
+    --header-footer-color: #D1BB9E;
+    --cart-color: #A79277;
+    --reservation-border-color: #B3A492;
+    --reservation-span-color: #c7b7a2;
+    --reservation-input-select-color: #A79277;
+    --form-text-h1-color: #A79277;
+}
+
 .text {
     font-family: "Crimson Text", serif;
     font-weight: 700;
@@ -5,7 +15,7 @@
 }
 
 body{
-    background-color: #FFF2E1;
+    background-color: var(--main-background-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-left: 25em;
-    background-color: #D1BB9E;
+    background-color: var(--header-footer-color);
 }
 
 .navmenu {
@@ -93,7 +103,7 @@ a:hover {
 }
 
 footer{
-    background-color: #D1BB9E;
+    background-color: var(--header-footer-color);
     width: 100%;
     height: 3em;
     padding-top: 2em;
@@ -107,7 +117,7 @@ footer{
 
 .cart{
     display: flex;
-    background-color: #A79277;
+    background-color: var(--cart-color);
     justify-content: space-between;
     align-items: center;
     padding: 7px 10px;
@@ -116,7 +126,7 @@ footer{
 }
 
 .fa-solid{
-    color: white;
+    color: var(--header-footer-color);
 }
 
 .cart p{
@@ -126,7 +136,7 @@ footer{
     align-items: center;
     justify-content: center;
     border-radius: 22px;
-    background-color: #D1BB9E;
+    background-color: var(--header-footer-color);
     color: white;
 }
 
@@ -146,7 +156,7 @@ footer{
 .sidebar{
     width: 40%;
     border-radius: 5px;
-    background-color: #F2EFE5;
+    background-color:#FFF2E1;
     margin-left: 20px;
     padding: 15px;
     text-align: center;
@@ -155,7 +165,7 @@ footer{
 
 
 .head{
-    background-color: #D1BB9E;
+    background-color: var(--header-footer-color);
     border-radius: 3px;
     height: 40px;
     padding: 10px;
@@ -179,7 +189,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #D1BB9E;
+    border: 1px solid var(--header-footer-color);
     border-radius: 5px;
     padding: 15px;
 }
@@ -245,7 +255,7 @@ button:hover{
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    border: 1px solid #D1BB9E;
+    border: 1px solid var(--header-footer-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -274,7 +284,7 @@ button:hover{
 .order-button{
     width: 100%;
     padding: 10px 0;
-    background-color: #D1BB9E;
+    background-color: var(--header-footer-color);
     color: white;
     border: none;
     border-radius: 5px;
@@ -309,7 +319,7 @@ button:hover{
 }
 
 .form-text h1{
-    color: #A79277;
+    color: var(--form-text-h1-color);
     margin-bottom: 20px;
 }
 
@@ -322,9 +332,9 @@ button:hover{
 .main-form div input {
     width: 100%;
     background: none;
-    border: 1px solid #B3A492;
+    border: 1px solid var(--reservation-border-color);
     font-size: 20px;
-    color: #A79277;
+    color: var(--reservation-input-select-color);
     outline: none;
     padding: 3px 0 3px 10px;
     margin-top: 10px;
@@ -332,16 +342,16 @@ button:hover{
 .main-form div select{
     width: 104%;
     background: none;
-    border: 1px solid #B3A492;
+    border: 1px solid var(--reservation-border-color);
     font-size: 20px;
-    color: #A79277;
+    color: var(--reservation-input-select-color);
     outline: none;
     padding: 3px 0 3px 10px;
     margin-top: 10px;
 }
 .main-form div span{
     width: 100%;
-    color: #c7b7a2;
+    color: var(--reservation-span-color);
 }
 
 #submit{
@@ -368,10 +378,22 @@ button:hover{
 /*books page /////////////////////////////*/
 
 
+.search-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 .content2{
     display: flex;
-    height: 100vh;  /* Use viewport height to fill the screen */
+    height: 100vh; 
 }
 
 .sidebar2{
@@ -397,7 +419,7 @@ button:hover{
 }
 
 .polaroid{
-    background-color: white;
+    background-color: #e3d4c0;
     border: 1px solid #ccc;
     padding: 10px 10px 20px 10px;
     text-align: center;
@@ -411,7 +433,7 @@ button:hover{
 }
 
 .head2, .foot2 {
-    background-color: #D1BB9E;
+    background-color: var(--header-footer-color);
     border-radius: 3px;
     padding: 10px;
     color: #333;
@@ -423,13 +445,64 @@ button:hover{
     padding: 10px;
     border-radius: 3px;
     min-height: 50px;
-    max-height: 300px; /* Fixed height */
+    max-height: 300px; 
     overflow-y: auto; /* Enable scrolling */
 }
 
 
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
 
 
+.modal-content {
+    background-color: var(--header-footer-color);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; 
+    text-align: center;
+}
+
+.modal-content h2{
+    color: green;
+}
+
+.close {
+    color: #333;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ 
+input[type="submit"], input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #45a049;
+}
 
 
 @media screen and (max-width:710px) {
@@ -440,6 +513,76 @@ button:hover{
         grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
     }
 }
-/*mobile :
- logo width 50%
- */
+
+
+
+@media screen and (max-width: 710px) {
+    header {
+        flex-direction: column;
+        padding-left: 1em;
+        text-align: center;
+    }
+
+    .navmenu {
+        flex-direction: column;
+    }
+
+    .navmenu a {
+        padding: 10px 20px;  
+    }
+
+    .logo {
+        width: 50%;  
+        margin-left: 0; 
+    }
+
+    .main-form, .form-text, .sidebar2, .products2 {
+        width: 100%;  
+        margin: 0;
+        padding: 10px;
+    }
+
+    .container2 {
+        grid-template-columns: 1fr;  
+    }
+
+    .sidebar2 {
+        order: 1; 
+        margin: 0; 
+    }
+
+    .products2 {
+        order: 2;
+    }
+
+    .modal-content {
+        width: 90%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navmenu a {
+        padding: 10px;
+    }
+
+    .search-container {
+        padding: 10px 5px;  
+    }
+
+    #searchBar {
+        width: 100%; 
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer ul {
+        padding: 0;
+    }
+
+    .footer li {
+        margin-top: 10px; 
+    }
+}

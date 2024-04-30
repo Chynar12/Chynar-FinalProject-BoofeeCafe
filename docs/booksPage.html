@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books Catalogue</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <header>
         <img class="logo" src="images/logo.png" alt="logo" />
         <ul class="navmenu text">
-            <li><a href="coffeePage.html" target="_blank">Order</a></li>
+            <li><a href="index.html" target="_blank">Home</a></li>
             <li><a href="reservationPage.html" target="_blank">Library</a></li>
-            <li><a href="booksPage.html" target="_blank">Books</a></li>
+            <li><a href="coffeePage.html" target="_blank">Pastry</a></li>
         </ul>
     </header>
     <br> <br> <br>
     <div class="content2">
         <div class="sidebar2">
-            <div class="head2"><p>My Cart</p></div>
+            <div class="head2">
+                <p>My Cart</p>
+            </div>
             <div id="cartItems" class="cart-items">Your cart is empty</div>
             <div class="foot2">
                 <h3>Total</h3>
@@ -26,38 +30,73 @@
                 <button onclick="submitOrder()">Order</button>
             </div>
         </div>
+
+
+
         <div class="products2">
-            <h1>The Best Books</h1>
-            <h2>Borrow or Buy</h2>
+            <h1>The Best Books <div class="search-container">
+                    <input type="text" id="searchBar" placeholder="Search books..." onkeyup="filterBooks()">
+                </div>
+            </h1>
             <div class="container2">
                 <div class="polaroid draggable" draggable="true" data-price="10.00">
-                    <img src="images/Ashk.png" alt="Ashk">
-                    <p>Ashk - $10.00 (Buy) or Borrow</p>
+                    <img src="images/Feslegen.png" alt="book image">
+                    <p>Feslegen - $10.00</p>
                     <button class="remove-item" style="display: none;">Remove</button>
                 </div>
 
                 <div class="polaroid draggable" draggable="true" data-price="10.00">
-                    <img src="images/Ashk.png" alt="Ashk">
-                    <p>Ashk - $10.00 (Buy) or Borrow</p>
-                    <button class="remove-item" style="display: none;">Remove</button> 
-                </div>
-
-                <div class="polaroid draggable" draggable="true" data-price="10.00">
-                    <img src="images/Ashk.png" alt="Ashk">
-                    <p>Ashk - $10.00 (Buy) or Borrow</p>
+                    <img src="images/Iskender.png" alt="book image">
+                    <p>Iskender - $10.00</p>
                     <button class="remove-item" style="display: none;">Remove</button>
                 </div>
 
                 <div class="polaroid draggable" draggable="true" data-price="10.00">
-                    <img src="images/Ashk.png" alt="Ashk">
-                    <p>Ashk - $10.00 (Buy) or Borrow</p>
-                    <button class="remove-item" style="display: none;">Remove</button> 
+                    <img src="images/MutantMessage.png" alt="book image">
+                    <p>Mutant Message - $10.00</p>
+                    <button class="remove-item" style="display: none;">Remove</button>
                 </div>
-                
+
                 <div class="polaroid draggable" draggable="true" data-price="10.00">
-                    <img src="images/Ashk.png" alt="Ashk">
-                    <p>Ashk - $10.00 (Buy) or Borrow</p>
-                    <button class="remove-item" style="display: none;">Remove</button> 
+                    <img src="images/Ashk.png" alt="book image">
+                    <p>Ashk - $10.00</p>
+                    <button class="remove-item" style="display: none;">Remove</button>
+                </div>
+
+                <div class="polaroid draggable" draggable="true" data-price="10.00">
+                    <img src="images/Brave-New-World.png" alt="book image">
+                    <p>Brave New World - $10.00</p>
+                    <button class="remove-item" style="display: none;">Remove</button>
+                </div>
+
+                <div class="polaroid draggable" draggable="true" data-price="10.00">
+                    <img src="images/Alchemist.png" alt="book image">
+                    <p>Alchemist - $10.00</p>
+                    <button class="remove-item" style="display: none;">Remove</button>
+                </div>
+
+                <div class="polaroid draggable" draggable="true" data-price="10.00">
+                    <img src="images/1984.png" alt="book image">
+                    <p>1984 - $10.00</p>
+                    <button class="remove-item" style="display: none;">Remove</button>
+                </div>
+
+                <div class="polaroid draggable" draggable="true" data-price="10.00">
+                    <img src="images/Benden Vazgecme Ya Rab.png" alt="book image">
+                    <p>Benden Vazgecme Ya Rab - $10.00</p>
+                    <button class="remove-item" style="display: none;">Remove</button>
+                </div>
+
+                <div class="polaroid draggable" draggable="true" data-price="10.00">
+                    <img src="images/Nasil-Dayandin-Ya_Resulullah.png" alt="book image">
+                    <p>Nasil Dayandin Ya Resulullah - $10.00</p>
+                    <button class="remove-item" style="display: none;">Remove</button>
+                </div>
+
+                <div class="polaroid draggable" draggable="true" data-price="10.00">
+                    <img src="images/TheChain.png" alt="book image">
+                    <p>The Chain - $10.00</p>
+                    <button class="remove-item" style="display: none;">Remove</button>
                 </div>
             </div>
         </div>
@@ -73,4 +112,5 @@
 
     <script src="bookDragDrop.js"></script>
 </body>
+
 </html>
