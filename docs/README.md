@@ -11,19 +11,19 @@ April 6 - Getting started 30%
 - [x] All photos are there
 - [x] three pages are present
 - [x] all basic bottons and forms are there
-- [ ] All HTML requirements are met
+- [x] All HTML requirements are met
 
 April 13 - 80% must be done - Technical Requirements Met
 - [x] All CSS requirements are met(except for few)
-- [ ] forms and bottons have event listeners
-- [ ] drag and drop for book order option
-- [ ] filter by book name
-- [ ] creating and deleting option
-- [ ] All JavaScript requirements are met
+- [x] forms and bottons have event listeners
+- [x] drag and drop for book order option
+- [x] filter by book name
+- [x] deleting option
+- [x] All JavaScript requirements are met
 
 April 20 - Project is 100% done - Functional Requirements Met
 - [ ] Hard Things requirements are met
 
 April 27
-- [ ] Submit and Present
+- [x] Submit and Present
 
